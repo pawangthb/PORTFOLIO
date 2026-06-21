@@ -320,21 +320,16 @@
             <div class="contact-content">
 
                 <div class="column center">
-
                     <div class="contact-box">
-
                         <div class="row">
                             <i class="fas fa-user"></i>
-
                             <div class="info">
                                 <div class="head">Name </div>
                                 <div class="sub-title">: Pawan Gupta</div>
                             </div>
                         </div>
-
                         <div class="row">
                             <i class="fas fa-envelope"></i>
-
                             <div class="info">
                                 <div class="head">Email </div>
                                 <div class="sub-title">
@@ -342,10 +337,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="row">
                             <i class="fas fa-location-dot"></i>
-
                             <div class="info">
                                 <div class="head">Location</div>
                                 <div class="sub-title">
@@ -353,35 +346,23 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                     <div class="social-links">
-
                         <a href="https://instagram.com/pawan_gupta_19" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-
                         <a href="https://www.linkedin.com/in/pawan-gupta-739914264" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
-
                         <a href="https://github.com/pawangthb" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
     <footer>
-
         <span>
             Created By 
             <a href="#">Pawan Gupta</a> 
@@ -389,89 +370,6 @@
             <span class="far fa-copyright"></span> 
             2026 All rights reserved.
         </span>
-
     </footer>
-
-    <script>
-
-        const menuBtn=document.querySelector(".menu-btn");
-        const menu=document.querySelector(".menu");
-
-        menuBtn.onclick=()=>{
-            menu.classList.toggle("active");
-        };
-
-        const texts=[
-            "Frontend Developer",
-            "Java Programmer",
-            "DSA Learner",
-            "Web Designer"
-        ];
-
-        let count=0;
-        let index=0;
-        let currentText="";
-        let letter="";
-
-        (function type(){
-
-            if(count===texts.length){
-                count=0;
-            }
-
-            currentText=texts[count];
-
-            letter=currentText.slice(0,++index);
-
-            document.getElementById("typing-text").textContent=letter;
-
-            if(letter.length===currentText.length){
-                count++;
-                index=0;
-                setTimeout(type,1200);
-            }
-            else{
-                setTimeout(type,120);
-            }
-
-        })();
-
-        window.addEventListener("scroll",()=>{
-
-            const navbar=document.querySelector(".navbar");
-
-            if(window.scrollY>20){
-                navbar.style.padding="15px 0";
-                navbar.style.background="#0d0d0d";
-            }
-            else{
-                navbar.style.padding="20px 0";
-                navbar.style.background="transparent";
-            }
-
-        });
-
-        const scrollBtn=document.querySelector(".scroll-up-btn");
-
-        window.addEventListener("scroll",()=>{
-
-            if(window.scrollY>500){
-                scrollBtn.classList.add("show");
-            }
-            else{
-                scrollBtn.classList.remove("show");
-            }
-
-        });
-
-        scrollBtn.onclick=()=>{
-            window.scrollTo({
-                top:0,
-                behavior:"smooth"
-            });
-        };
-
-    </script>
-
 </body>
 </html>
